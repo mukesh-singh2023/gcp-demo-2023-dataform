@@ -6,9 +6,8 @@ config {
 
 
 SELECT RedditUserId, RedditUser,
-'df-SentinelOneAgents' as CreateBy, 
+'df-RedditComments' as CreateBy, 
  CURRENT_TIMESTAMP() as CreateDate,
-  'df-SentinelOneAgents' as CreateProcess,
-  'df-SentinelOneAgents' as UpdateBy
- 
-FROM ${ref("SentinelOneAgentsStage")}
+'df-RedditComments' as CreateProcess
+  
+FROM ${ref("BQ-RedditComments")}

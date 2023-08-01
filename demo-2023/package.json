@@ -1,5 +1,5 @@
 {
-  "name": "my-dataform",
+  "name": "gcp-demo-2023-dataform",
   "dependencies": {
     "@dataform/core": "2.0.1"
   }

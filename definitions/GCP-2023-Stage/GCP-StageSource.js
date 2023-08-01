@@ -1,4 +1,4 @@
 declare({
-    schema:"GCP-2023-Stage",
+    schema:"GCP2023Stage",
     name: "BQ-RedditComments"
 });

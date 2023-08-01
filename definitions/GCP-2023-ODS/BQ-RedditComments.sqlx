@@ -1,0 +1,14 @@
+config {
+  type: "table",
+  schema: "GCP2023ODS",
+  tags: ["RedditUsers"]
+}
+
+
+SELECT RedditUserId, RedditUser,
+'df-SentinelOneAgents' as CreateBy, 
+ CURRENT_TIMESTAMP() as CreateDate,
+  'df-SentinelOneAgents' as CreateProcess,
+  'df-SentinelOneAgents' as UpdateBy,
+ 
+FROM ${ref("SentinelOneAgentsStage")}

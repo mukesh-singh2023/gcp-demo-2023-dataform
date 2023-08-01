@@ -9,5 +9,5 @@ SELECT RedditUserId, RedditUser,
 'df-RedditComments' as CreateBy, 
  CURRENT_TIMESTAMP() as CreateDate,
 'df-RedditComments' as CreateProcess
-  
+
 FROM ${ref("BQ-RedditComments")}

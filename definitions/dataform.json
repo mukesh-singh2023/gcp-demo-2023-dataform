@@ -1,6 +1,6 @@
 {
   "defaultSchema": "dataform",
-  "assertionSchema": "DataformAssertions",
+  "assertionSchema": "dataform_assertions",
   "warehouse": "bigquery",
   "defaultDatabase": "gcp-demo-2023",
   "defaultLocation": "US"

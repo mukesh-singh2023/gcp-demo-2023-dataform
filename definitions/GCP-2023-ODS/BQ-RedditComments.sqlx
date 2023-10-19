@@ -1,13 +1,14 @@
 config {
-  type: "table",
-  schema: "GCP2023ODS",
-  tags: ["RedditUsers"]
+    type: "table",
+    schema: "GCP2023ODS",
+    tags: ["RedditUsers"]
 }
 
-
-SELECT RedditUserId, RedditUser,
-'df-RedditComments' as CreateBy, 
- CURRENT_TIMESTAMP() as CreateDate,
-'df-RedditComments' as CreateProcess
-
-FROM ${ref("BQ-RedditComments")}
+SELECT
+  RedditUserId,
+  RedditUser,
+  'df-RedditComments' AS CreateBy,
+  CURRENT_TIMESTAMP() AS CreateDate,
+  'df-RedditComments' AS CreateProcess
+FROM
+  ${ref("BQ-RedditComments")}
